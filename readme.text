@@ -1,0 +1,53 @@
+pip freeze
+pip install virtualenv
+cd Desktop
+virtualenv venv
+cd venv
+.\Scripts\activate
+deactivate
+pip install django==1.6.7
+
+//to make sure that everything is installed
+pip freeze
+
+//start project
+.\Scripts\django-admin.py startproject test
+
+
+python manage.py startapp polls
+
+python manage.py shell
+python manage.py runserver
+_______________________________________
+
+move in windows is equivalent of mv command in Linux
+
+del in windows is equivalent of rm command in Linux
+
+password : poo
+--------------------------------
+Template tags use {% ... %} (template filters use {{ ... }})
+--------------------------------
+//pour dire a django qu on a fait des changement dans le modele
+python manage.py makemigrations polls
+
+//pour créer des migrations correspondant à ces changements.
+python manage.py sqlmigrate polls 0001
+
+//pour appliquer ces modifications à la base de données.
+python manage.py migrate
+
+python manage.py createsuperuser
+------------------------------------------------
+Si vous ne savez pas où les fichiers source de Django se trouvent 
+sur votre système, lancez la commande suivante :
+
+$ python -c "
+--------------------------------------------------
+
+
+
+
+
+
+
